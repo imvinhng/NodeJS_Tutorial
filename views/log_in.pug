@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Again!
+//- body
+//-     h2 Log In Page
+
+//-     -let user = { name: "Dominic", loggedIn: false, lastLogIn : 6 }
+
+//-     if user.loggedIn
+//-         p
+//-             | Welcome back
+//-             strong #{user.name}
+//-     else if user.lastLogIn < 10
+//-         p Your last login was #{user.lastLogIn} minutes ago
+//-         p
+//-             a(href="/log_in") Log in Again
+//-     else 
+//-         a(href='/log_in') Log in

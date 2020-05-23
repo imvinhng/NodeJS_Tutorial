@@ -10,20 +10,24 @@ router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/user', function(req, res, next) {
-  res.render('user', { title: 'Express User' });
+router.get('/personal', function(req, res, next) {
+  res.render('personal', { title: 'Express User' });
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About Us' });
 });
 
 router.get('/international', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('international', { title: 'International Map' });
 });
 
 router.get('/united', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('united', { title: 'United Map' });
 });
 
-router.get('/help', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/log_in', function(req, res, next) {
+  res.render('log_in', { title: 'Log In Page' });
 });
 
 
